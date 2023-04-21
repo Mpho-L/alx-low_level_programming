@@ -6,9 +6,9 @@
  * main - Entry point of the program
  *
  * This function generates a random number and prints whether it is positive,
- * negative, or zero. It uses the srand() and rand() functions from the stdlib.h
+ * negative or zero. It uses the srand() and rand() functions from the stdlib.h
  * library to generate the random number, and then uses if-else statements to
- * determine whether it is positive, negative, or zero. The result is printed to
+ * determine whether it is positive, negative or zero. The result is printed to
  * the console using printf().
  *
  * Return: Always 0
