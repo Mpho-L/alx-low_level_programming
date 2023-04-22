@@ -24,5 +24,6 @@ while (letter[i] != '\0')
 putchar(letter[i]);
 i++;
 }
+putchar("\n");
 return (0);
 }
