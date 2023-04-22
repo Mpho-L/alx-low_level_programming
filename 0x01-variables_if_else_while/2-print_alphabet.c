@@ -16,14 +16,14 @@
 *returns the value 0 to indicate that it executed successfully.
 */
 
-int main()
+int main(void)
 {
-const char* letter = "abcdefghijklmnopqrstuvwxyz ";
+const char *letter = "abcdefghijklmnopqrstuvwxyz ";
 int i = 0;
 while (letter[i] != '\0')
 {
 putchar(letter[i]);
 i++;
 }
-return 0;
+return (0);
 }
