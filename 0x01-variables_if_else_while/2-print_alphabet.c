@@ -21,7 +21,8 @@ const char *letter = "abcdefghijklmnopqrstuvwxyz";
 int i = 0;
 while (letter[i] != '\0')
 {
-putchar(letter[i]\n);
+putchar(letter[i]);
+putchar("\n")
 i++;
 }
 
