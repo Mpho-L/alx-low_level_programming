@@ -2,7 +2,6 @@
 
 /**
 * main - Entry point for the program
-
 *This program that declares a constant string letter
 *and then uses a while loop to print each character
 *in the string to the console using the putchar() function.
@@ -18,7 +17,7 @@
 
 int main(void)
 {
-const char *letter = "abcdefghijklmnopqrstuvwxyz ";
+const char *letter = "abcdefghijklmnopqrstuvwxyz";
 int i = 0;
 while (letter[i] != '\0')
 {
