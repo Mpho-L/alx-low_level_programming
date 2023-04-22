@@ -22,7 +22,6 @@ int i = 0;
 while (letter[i] != '\0')
 {
 putchar(letter[i]);
-putchar("\n")
 i++;
 }
 
