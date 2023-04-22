@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - Entry point for the program
+*main - Entry point for the program
 *This program that declares a constant string letter
 *and then uses a while loop to print each character
 *in the string to the console using the putchar() function.
