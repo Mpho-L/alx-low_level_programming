@@ -11,7 +11,7 @@
 
 int main(void)
 {
-char string = "with proper grammar, but the outcome is a piece of art,";
+char string[] = "with proper grammar, but the outcome is a piece of art,";
 pritnf("%s\n", string);
 
 return(0);
