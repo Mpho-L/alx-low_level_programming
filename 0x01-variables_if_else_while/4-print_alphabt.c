@@ -4,7 +4,7 @@
 *main - entry point to the program
 *
 *Description: This program prints the lowercase and uppercase alphabet,
-*excluding the letters 'q' and 'e', followed by a new line character. 
+*excluding the letters 'q' and 'e', followed by a new line character.
 *
 *Return: always 0 (success)
 */
