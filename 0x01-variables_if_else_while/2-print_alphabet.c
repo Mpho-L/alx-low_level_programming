@@ -1,6 +1,8 @@
 #include <stdio.h>
+
 /**
 *main - Entry point for the program
+
 *Description: This program that declares a constant string letter
 *and then uses a while loop to print each character
 *in the string to the console using the putchar() function.
@@ -10,9 +12,11 @@
 *loop iterates over the characters in the string using an index variable i.
 *The loop continues as long as the current character is not the null
 *character '\0'.Inside the loop, the putchar() function is used
-*to print each character to the console. Finally, the program
-*returns the value 0 to indicate that it executed successfully.
+*to print each character to the console.
+*
+*Return: Always 0 (Success)
 */
+
 int main(void)
 {
 const char *letter = "abcdefghijklmnopqrstuvwxyz\n";
