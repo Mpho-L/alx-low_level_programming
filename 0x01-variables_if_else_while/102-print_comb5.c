@@ -5,7 +5,6 @@
  *
  *Description: This program prints all possible two two-digit numbers separated
  *by commas.
-
  *
  *Return: always 0 (success)
 */
