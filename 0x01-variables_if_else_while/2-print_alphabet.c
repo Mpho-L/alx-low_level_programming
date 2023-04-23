@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
 *main - Entry point for the program
 *This program that declares a constant string letter
@@ -14,7 +13,6 @@
 *to print each character to the console. Finally, the program
 *returns the value 0 to indicate that it executed successfully.
 */
-
 int main(void)
 {
 const char *letter = "abcdefghijklmnopqrstuvwxyz\n";
