@@ -3,9 +3,9 @@
 /**
  *main - entry to the program
  *
- *Description: This program prints all possible two-digit numbers
- *separated by commas, with the smallest combination
- *of digits where duplicates are excluded.
+ *Description: This program print all possible combinations of two different digits,
+ * separated by comma and space. Numbers must be in ascending order and
+ * separated by a comma, with no space after the last digit.
  *
  *Return: always 0 (success)
 */
@@ -20,14 +20,10 @@ for (n = 1; n < 10; n++)
 {
 putchar(i + '0');
 putchar(n + '0');
-if (i == 8 && n == 9)
-break;
-/*if (i != 9 || n != 9)
-*/
-putchar(',');
-/*
+if (i != j)
 if (i != 9 || n != 9)
-*/
+putchar(',');
+if (i != 9 || n != 9)
 putchar(' ');
 }
 }
