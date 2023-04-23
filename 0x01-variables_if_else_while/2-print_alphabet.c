@@ -15,7 +15,7 @@
 *returns the value 0 to indicate that it executed successfully.
 */
 
-int main()
+int main(void)
 {
 const char *letter = "abcdefghijklmnopqrstuvwxyz\n";
 int i = 0;
