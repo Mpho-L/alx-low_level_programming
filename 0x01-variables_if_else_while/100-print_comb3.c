@@ -3,21 +3,26 @@
 /**
  *main - entry to the program
  *
- *Description: This program prints the digits 0 through 9 separated by commas
+ *Description: This program prints all possible two-digit numbers separated by commas.
+
  *
  *Return: always 0 (success)
 */
 
 int main(void)
 {
-int i;
+int i, n;
 
 for (i = 0; i < 10; i++)
 {
+for (n = 0; n < 10; n++)
+{
 putchar(i + '0');
-if (i != 9)
-putchar(', ');
-//putchar(' ');
+putchar(n + '0');
+
+if (i != 9 || n != 9)
+putchar(',');
+}
 }
 putchar('\n');
 return (0);
