@@ -22,9 +22,12 @@ putchar(i + '0');
 putchar(n + '0');
 if (i == 8 && n == 9)
 break;
-//if (i != 9 || n != 9)
+/*if (i != 9 || n != 9)
+*/
 putchar(',');
-//if (i != 9 || n != 9)
+/*
+if (i != 9 || n != 9)
+*/
 putchar(' ');
 }
 }
