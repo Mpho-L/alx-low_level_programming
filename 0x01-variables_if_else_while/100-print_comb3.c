@@ -20,7 +20,7 @@ for (n = 1; n < 10; n++)
 {
 putchar(i + '0');
 putchar(n + '0');
-if (i != j)
+if (i != n)
 if (i != 9 || n != 9)
 putchar(',');
 if (i != 9 || n != 9)
