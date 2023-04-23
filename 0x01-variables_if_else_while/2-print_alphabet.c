@@ -17,7 +17,7 @@
 
 int main(void)
 {
-const char *letter = "abcdefghijklmnopqrstuvwxyz";
+const char *letter = "abcdefghijklmnopqrstuvwxyz\n";
 int i = 0;
 while (letter[i] != '\0')
 {
