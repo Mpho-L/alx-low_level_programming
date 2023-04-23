@@ -3,9 +3,10 @@
 /**
  * main -entry point
  *The code below uses the sizeof operator to determine
- *the size in bytes of various types (char, int, long int, long long int and float)
- *on the computer it is compiled and run on. 
- It then uses printf() to output the size of each type to the console.
+ *the size in bytes of various types
+ *(char, int, long int, long long int and float)
+ *on the computer it is compiled and run on.
+ *It then uses printf() to output the size of each type to the console.
  *Return: Always 0 (Success)
 */
 
