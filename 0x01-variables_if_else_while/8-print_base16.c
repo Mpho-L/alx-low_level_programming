@@ -20,7 +20,7 @@ putchar(i + '0');
 }
 else
 {
-putchar(i - 10 + 'A');
+putchar(i - 10 + 'a');
 }
 putchar('\n');
 return (0);
