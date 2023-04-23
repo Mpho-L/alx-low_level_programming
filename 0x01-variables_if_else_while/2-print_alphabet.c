@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - Entry point for the program
-*This program that declares a constant string letter
+*Description: This program that declares a constant string letter
 *and then uses a while loop to print each character
 *in the string to the console using the putchar() function.
 *The string letter is initialized to the lowercase alphabet, from 'a' to 'z'.
@@ -22,5 +22,5 @@ while (letter[i] != '\0')
 putchar(letter[i]);
 i++;
 }
-return 0;
+return (0);
 }
