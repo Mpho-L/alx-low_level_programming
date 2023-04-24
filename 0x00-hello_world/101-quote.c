@@ -15,7 +15,7 @@ int i = 0;
 while (quote[i] != '\0')
 {
 putchar(quote[i]);
-putchar('\n')
+putchar('\n');
 i++;
 }
 return (1);
