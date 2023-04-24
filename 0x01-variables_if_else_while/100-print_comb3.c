@@ -10,23 +10,17 @@
  *Return: always 0 (success)
 */
 
-int main(void)
-{
-int i, n;
-
-for (i = 0; i < 9; i++)
-{
-for (n = 1; n < 10; n++)
-{
+int main() {
+int i, j;
+for (i = 0; i < 10; i++) {
+for (j = i + 1; j < 10; j++) {
 putchar(i + '0');
-putchar(n + '0');
-if (i != n)
-if (i != 9 || n != 9)
+putchar(j + '0');
+if (i != 8 || j != 9) {
 putchar(',');
-if (i != 9 || n != 9)
 putchar(' ');
 }
 }
-putchar('\n');
-return (0);
+}
+return 0;
 }
