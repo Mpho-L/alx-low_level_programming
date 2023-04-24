@@ -27,7 +27,9 @@ putchar(' ');
 putchar(z + '0');
 putchar(t + '0');
 if (i != 9 || n != 9 || z != 9 || t != 9)
+{
 putchar(',');
+}
 }
 }
 }
