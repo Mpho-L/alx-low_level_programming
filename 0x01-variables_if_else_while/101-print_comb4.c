@@ -24,8 +24,10 @@ putchar(n + '0');
 putchar(z + '0');
 
 if (i != 7 || n != 8 || z != 9)
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
