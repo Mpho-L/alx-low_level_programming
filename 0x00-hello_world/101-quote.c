@@ -2,10 +2,11 @@
 
 /**
  *main - entry point of the program
- * 
- *Description: The program prints a quote by Dora Korpar to the standard output.
+ *
+ *Description: The program prints a quote by Dora Korpar to the standard
+ *output.
  *  
- * returns 1
+ * return: is 1
 */
 int main(void)
 {
@@ -14,6 +15,7 @@ int i = 0;
 while (quote[i] != '\0')
 {
 putchar(quote[i]);
+putchar('\n')
 i++;
 }
 return (1);
