@@ -5,8 +5,8 @@
  *
  *Description: The program prints a quote by Dora Korpar to the standard
  *output.
- *  
- * return: is 1
+ *
+ *Return: is 1
 */
 int main(void)
 {
@@ -15,8 +15,8 @@ int i = 0;
 while (quote[i] != '\0')
 {
 putchar(quote[i]);
-putchar('\n');
 i++;
 }
+putchar('\n');
 return (1);
 }
