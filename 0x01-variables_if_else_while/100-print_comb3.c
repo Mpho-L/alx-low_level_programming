@@ -3,8 +3,8 @@
 /**
  *main - entry to the program
  *
- *Description: This program print all possible combinations of two different digits,
- * separated by comma and space. Numbers must be in ascending order and
+ *Description: This program print all possible combinations of two different
+ *digits, separated by comma and space. Numbers must be in ascending order and
  * separated by a comma, with no space after the last digit.
  *
  *Return: always 0 (success)
