@@ -2,10 +2,10 @@
 
 /**
  * main - entry point of the program.
- * 
+ *
  * Description: The program prints the string "_putchar" character by character
  * using the putchar function.
- * 
+ *
  * Return: always 0 (success)
 */
 
@@ -20,7 +20,7 @@ i++;
 for (i = 0; Putchar[i] != '\0'; i++)
 {
 putchar(Putchar[i]);
-}
 putchar('\n')
+}
 return (0);
 }
