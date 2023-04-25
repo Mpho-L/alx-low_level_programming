@@ -20,7 +20,7 @@ i++;
 for (i = 0; Putchar[i] != '\0'; i++)
 {
 putchar(Putchar[i]);
-putchar('\n')
 }
+putchar('\n');
 return (0);
 }
