@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-* main - entry point to the progran
+*main - entry point to the progran
 *
-* Description: The program causes an infinite loop
+*Description: The program causes an infinite loop
 *
-* Return: 0
+*Return: 0
 */
 
 int main(void)
