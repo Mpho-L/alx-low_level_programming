@@ -1,10 +1,7 @@
 #include <stdio.h>
 
 /**
-*main - entry point to the progran
-*
-*Description: The program causes an infinite loop
-*
+*main - entry point to the progran and causes an infinite loop
 *Return: 0
 */
 
