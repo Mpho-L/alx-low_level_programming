@@ -1,5 +1,6 @@
 #ifndef MAIN_H
-#define MA
+#define MAIN_H
+
 #include <stdio.h>
 
 void positive_or_negative(int i);
