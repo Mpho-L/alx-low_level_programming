@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+*main - Entry point
+*
+*Description: Prints numbers from 1 to 100, replacing multiples of three
+*with Fizz, multiples of five with Buzz, and multiples of both with FizzBuzz
+*
+*Return: Always 0 (Success)
+*/
 int main(void)
 {
 int i;
@@ -24,5 +32,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
-return 0;
+return (0);
 }
