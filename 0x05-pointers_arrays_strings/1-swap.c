@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*swap - entry point to the program
+*swap_int - entry point to the program
 *
 *Description: The 'swap' function takes two integer pointers as parameters and
 *swaps the values of the two variables they point to using a temporary
@@ -11,7 +11,7 @@
 *
 */
 
-void swap(int *a, int *b)
+void swap_int(int *a, int *b)
 {
 
 int temp;
