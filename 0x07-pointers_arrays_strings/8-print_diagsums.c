@@ -10,16 +10,27 @@
  */
 void print_diagsums(int *a, int size)
 {
-int i, sum1 = 0, sum2 = 0;
+int i, j;
+int sum1 = 0, sum2 = 0;
 for (i = 0; i < size; i++)
 {
-sum1 += *(a + i * size + i);
-sum2 += *(a + (i * size) + (size - i - 1));
-}
-char buffer[15];
-int digits = sprintf(buffer, "%d, %d\n", sum1, sum2);
-for (i = 0; i < digits; i++)
+for (j = 0; j < size; j++)
 {
-_putchar(buffer[i]);
+if (i == j)
+{
+sum1 += *((a + i * size) + j);
 }
+if (i + j == size - 1)
+{
+sum2 += *((a + i * size) + j);
+}
+}
+}
+_putchar(sum1 / 10 + '0');
+_putchar(sum1 % 10 + '0');
+_putchar(',');
+_putchar(' ');
+_putchar(sum2 / 10 + '0');
+_putchar(sum2 % 10 + '0');
+_putchar('\n');
 }
