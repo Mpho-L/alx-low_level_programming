@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 #include "dog.h"
-
+#include "1-init_dog.c"
 /**
- * new_dog - th eprogram creates a new dog
+ * new_dog - the program creates a new dog
  * @name: Name of the dog
  * @age: Age of the dog
  * @owner: Owner of the dog
