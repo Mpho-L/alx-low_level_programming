@@ -23,14 +23,14 @@ if (new_dog == NULL)
 {
 return (NULL);
 }
-name_len = strlen(name) + 1;
+name_length = strlen(name) + 1;
 new_name = malloc(sizeof(char) * name_length);
 if (new_name == NULL)
 {
 free(new_dog);
 return (NULL);
 }
-owner_len = strlen(owner) + 1;
+owner_length = strlen(owner) + 1;
 new_owner = malloc(sizeof(char) * owner_length);
 if (new_owner == NULL)
 {
