@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
+#include <string.h>
+
 /**
  * listint_len - the program returns the number of elements in a listint_t list.
  * @h: Pointer to the head of the list.
