@@ -5,7 +5,7 @@
 #include "lists.h"
 
 /**
- * free_listint2 - the program frees a listint_t list and sets the head to NULL.
+ * free_listint2 - the program frees a listint_t list and sets the head to NULL
  * @head: Pointer to a pointer to the head of the list.
  */
 
