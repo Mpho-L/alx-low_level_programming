@@ -33,5 +33,5 @@ if (loop_start != NULL)
 printf("-> [%p] %d\n", (void *)loop_start, loop_start->n);
 exit(98);
 }
-return (coun)t;
+return (count);
 }
