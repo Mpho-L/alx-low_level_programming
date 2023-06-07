@@ -22,7 +22,7 @@ printf("[%p] %d\n", (void *)current, current->n);
 count++;
 
 if (current->next >= current)
-]{
+{
 loop_start = current->next;
 break;
 }
