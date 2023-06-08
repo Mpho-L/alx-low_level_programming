@@ -19,5 +19,5 @@ return (-1);
 unsigned long int mask = 1UL << index;
 unsigned long int bit = n & mask;
 
-return (bit != 0) ? 1 : 0;
+return ((bit != 0) ? 1 : 0);
 }
