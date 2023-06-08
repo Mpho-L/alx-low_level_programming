@@ -4,20 +4,22 @@
 #include <stddef.h>
 
 /**
- * get_bit - the program returns the value of a bit at a given index.
- * @n: The number to extract the bit from.
- * @index: The index of the bit to retrieve.
+ * set_bit - the program sets the value of a bit to 1 at a given index.
+ * @n: Pointer to the number to modify.
+ * @index: The index of the bit to set.
  *
- * Return: The value of the bit at index @index, or -1 if an error occurred.
+ * Return: 1 if it worked, or -1 if an error occurred.
  */
 
 int get_bit(unsigned long int n, unsigned int index)
 {
+unsigned long int mask;
+unsigned long int bit;
 if (index >= (sizeof(unsigned long int) * 8))
+{
 return (-1);
-
-unsigned long int mask = 1UL << index;
-unsigned long int bit = n & mask;
-
+}
+mask = 1UL << index;
+bit = n & mask;
 return ((bit != 0) ? 1 : 0);
 }
