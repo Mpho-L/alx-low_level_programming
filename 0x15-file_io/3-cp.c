@@ -4,41 +4,68 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#define BUFFER_SIZE 1024
 
 /**
- * create_file - the program creates a file and writes the provided text
- * content to it.
- * @filename: The name of the file to create.
- * @text_content: The NULL-terminated string to write to the file.
+ * main - Entry point of the program
+ * @argc: The number of command-line arguments
+ * @argv: An array containing the command-line arguments
  *
- * Return: 1 on success, -1 on failure.
+ * Return: 0 on success, or the corresponding exit code on failure
  */
 
-int create_file(const char *filename, char *text_content)
+int main(int argc, char *argv[])
 {
-int fd, bytes_written, text_length = 0;
+int fd_from, fd_to, bytes_read, bytes_written;
+char buffer[BUFFER_SIZE];
 
-if (filename == NULL)
-return (-1);
-
-if (text_content != NULL)
+if (argc != 3)
 {
-while (text_content[text_length])
-text_length++;
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+return (97);
 }
-fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-if (fd == -1)
-return (-1);
-
-if (text_content != NULL)
+fd_from = open(argv[1], O_RDONLY);
+if (fd_from == -1)
 {
-bytes_written = write(fd, text_content, text_length);
-if (bytes_written == -1 || bytes_written != text_length)
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+return (98);
+}
+fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP
+| S_IWGRP | S_IROTH);
+if (fd_to == -1)
 {
-close(fd);
-return (-1);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+close(fd_from);
+return (99);
+}
+while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+{
+bytes_written = write(fd_to, buffer, bytes_read);
+if (bytes_written == -1 || bytes_written != bytes_read)
+{
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+close(fd_from);
+close(fd_to);
+return (99);
 }
 }
-close(fd);
-return (1);
+if (bytes_read == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+close(fd_from);
+close(fd_to);
+return (98);
+}
+if (close(fd_from) == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+close(fd_to);
+return (100);
+}
+if (close(fd_to) == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+return (100);
+}
+return (0);
 }
